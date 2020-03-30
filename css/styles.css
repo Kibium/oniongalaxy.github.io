@@ -12,32 +12,137 @@ body{
     
     background-color: rgb(236, 236, 236);
     font-size: 62.5%;
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
   }
+
+h1{
+  font-size: 4rem;
+}
+
+h2{
+  font-size: 2rem;
+  padding:1rem;
+}
+
+h1 span{
+  display: block;
+  text-align: center;
+}
+
+h1 span.site-title{
+  color:green;
+}
 
 img{
     max-width: 100%;
   }
 
 p{
-    font-size: 1.2rem;
-}  
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+p.site-email{
+  
+}
 
 a{
   text-decoration: none;
+  text-align: center;
 }
 
-a p{
-  text-decoration: none;
-}
 
 .container{
-      margin: 0 auto;
-      max-width: 1200px;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 .center{
-    text-align: center;
+  text-align: center;
+}
+
+/* Beginning*/
+header{
+  background-color: #e1e1e1;
+  padding: 1rem;
+}
+
+.social a{
+  font-size: 3rem;
+  margin-right: 1rem;
+}
+
+.social a:last-child{
+  
+  margin-right: 0;
+}
+
+/* Introduction */
+.about-me{
+  padding: 1rem;
+
+}
+
+.my-face{
+  width: 200px;
+  border-radius: 50%;
+  margin-top:1rem;
+}
+
+.me{
+  
+  line-height: 1.2;
+}
+
+.me p{
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+/* My path */
+.path{
+  padding: 1rem;
+}
+
+.programming{
+
+}
+
+
+.programming-icons{
+  text-align: center;
+}
+
+/* Fancy  icons*/
+.programming-icons p,
+.tools-icons p,
+.hobbies-icons p{
+  margin: 1rem 0 0 1rem;
+  font-size: 5rem;
+  color:#7a7a7a;
+}
+
+.tools-icons p i:last-child{
+  margin-left: 0.8rem;
+}
+
+/* Projects */
+.cool-underline{
+  position:relative;
+}
+
+.cool-underline::after{
+  content:'';
+  position:absolute;
+  display: block;
+  top: 80px;
+  left:440px;
+  /*Li hem donat ses dimensions i un color de fons*/
+  width:20rem;
+  height: 0.3rem;
+  background-color: #a0a0a0;
+  border-radius: 5px;
 }
 
 /** header **/
