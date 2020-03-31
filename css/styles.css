@@ -52,6 +52,11 @@ p{
     text-align: center;
 }
 
+p.year{
+  color:#9b9b9b;
+  font-weight: 400;
+}
+
 img{
   width: 100%;
 }
@@ -184,7 +189,6 @@ header{
   height: 0.25rem;
   background-color: green;
   border-radius: 5px;
-  margin-bottom: 2rem;
 }
 
 /* Projects */
