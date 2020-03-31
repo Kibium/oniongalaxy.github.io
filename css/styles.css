@@ -92,6 +92,10 @@ a.ig:hover{
  
 }
 
+a.itchio:hover{
+  color: #fa5c5c;
+}
+
 .container{
   margin: 0 auto;
   max-width: 1200px;
@@ -137,6 +141,13 @@ header{
   font-size: 1.4rem;
   font-weight: 300;
   margin: 0 auto;
+}
+
+.button{
+  border: 1px #bdbdbd solid;
+  display: inline;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
 }
 
 /* My path */
@@ -186,6 +197,7 @@ header{
 
 .project{
   display: flex;
+  margin-bottom: 10rem;
 }
 
 .project .gif{
@@ -195,6 +207,7 @@ header{
 .reverse-project{
   display: flex;
   flex-direction: row-reverse;
+  margin-bottom: 10rem;
 }
 
 .reverse-project .info{
