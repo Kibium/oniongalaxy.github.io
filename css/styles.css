@@ -10,14 +10,17 @@ html {
   /** Globals **/
 body{
     
-    background-color: rgb(236, 236, 236);
+    background-color: rgb(255, 255, 255);
     font-size: 62.5%;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 300;
   }
 
+
+
 h1{
   font-size: 4rem;
+  margin-bottom: 0;
 }
 
 h2{
@@ -25,9 +28,15 @@ h2{
   padding:1rem;
 }
 
+h3{
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
 h1 span{
   display: block;
   text-align: center;
+  
 }
 
 h1 span.site-title{
@@ -43,15 +52,45 @@ p{
     text-align: center;
 }
 
+img{
+  width: 100%;
+}
+
 p.site-email{
   
 }
 
 a{
+  color: green;
   text-decoration: none;
   text-align: center;
+  transition: color .3s ease-in-out;
 }
 
+a:hover{
+  color: red;
+}
+
+a.github:hover{
+  color: #6f42c1;
+}
+
+a.linkedin:hover{
+  color: #1da1f2;
+}
+
+a.ig{
+  background: -webkit-linear-gradient(#f5e96c, #fdf497, #fd5949, #d6249f, #285AEB);
+  -webkit-background-clip: text;
+}
+
+a.ig:hover{
+  transition: all .3s ease-in-out;
+
+  color:transparent;
+  -webkit-text-fill-color: transparent;
+ 
+}
 
 .container{
   margin: 0 auto;
@@ -90,14 +129,14 @@ header{
   margin-top:1rem;
 }
 
-.me{
-  
+.me{ 
   line-height: 1.2;
 }
 
 .me p{
   font-size: 1.4rem;
   font-weight: 300;
+  margin: 0 auto;
 }
 
 /* My path */
@@ -129,21 +168,63 @@ header{
 
 /* Projects */
 .cool-underline{
-  position:relative;
+ 
+  width:10rem;
+  height: 0.25rem;
+  background-color: green;
+  border-radius: 5px;
+  margin-bottom: 2rem;
 }
 
-.cool-underline::after{
-  content:'';
-  position:absolute;
-  display: block;
-  top: 80px;
-  left:440px;
-  /*Li hem donat ses dimensions i un color de fons*/
-  width:20rem;
-  height: 0.3rem;
-  background-color: #a0a0a0;
-  border-radius: 5px;
+/* Projects */
+
+.projects-header p{
+  margin:0 auto;
+  text-align: center;
+  margin-bottom: 2rem;
 }
+
+.project{
+  display: flex;
+}
+
+.project .gif{
+  margin-right: 1rem;
+}
+
+.reverse-project{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.reverse-project .info{
+  margin-right: 1rem;
+}
+
+.info{
+  width:40%;
+  text-align: left;
+  margin-left: 1rem;
+}
+
+.info p{
+  margin-top: 0;
+  text-align: left;
+}
+
+
+.gif{
+  border-radius: 2%;
+  max-width: 500px;
+}
+
+
+.contributions{
+  line-height: 1;
+  
+}
+
+
 
 /** header **/
 .site-header{
@@ -170,36 +251,6 @@ img.logo{
   text-align: center;
   padding: 2rem 0;
 }
-
-.nav-header a{
-  color: black;
-  font-size: 2rem;
-  padding: 0.2rem;
-  margin: 1rem;
-  transition: color .3s ease-in-out;
-
-}
-
-.nav-header a:hover{
-  color: red;
-}
-
-.nav-header a.fb:hover{
-  color: blue;
-}
-
-.nav-header a.tw:hover{
-  color: #1da1f2;
-}
-
-.nav-header a.ig:hover{
-  color: white;
-  height: 80%;
-  border-radius: 25%;
-  background: -webkit-linear-gradient(45deg, #fdf497, #fdf497, #fd5949, #d6249f, #285AEB  80%);
- 
-}
-
 
 .site-footer{
   background-color: #3F3F3F; 
