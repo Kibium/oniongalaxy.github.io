@@ -182,16 +182,27 @@ header{
   margin-left: 0.8rem;
 }
 
-/* Projects */
 .cool-underline{
- 
+  margin:0 auto;
+  text-align: center;
   width:10rem;
   height: 0.25rem;
   background-color: green;
   border-radius: 5px;
 }
 
-/* Projects */
+@media (min-width: 768px){
+  .cool-underline{
+    margin: 0;
+   text-align:left;
+    width:10rem;
+    height: 0.25rem;
+    background-color: green;
+    border-radius: 5px;
+  }
+}
+
+/*Project*/
 
 .projects-header p{
   margin:0 auto;
@@ -200,17 +211,57 @@ header{
 }
 
 .project{
-  display: flex;
+  display: block;
   margin-bottom: 10rem;
 }
 
-.project .gif{
-  margin-right: 1rem;
+.info{
+  text-align: center;
+  margin-left: 1rem;
 }
 
+.gif{
+  display: block;
+  margin: 0 auto;
+  border-radius: 2%;
+  max-width: 500px;
+}
+
+@media(min-width: 768px){
+  .gif{
+    display: block;
+    margin: 0 auto;
+    border-radius: 2%;
+    max-width: 500px;
+  }
+
+  .project .gif{
+    margin-right: 1rem;
+  }
+}
+
+@media(min-width: 768px){
+  .project{
+    display: flex;
+    margin-bottom: 10rem;
+  }
+
+  .info{
+    width:40%;
+    text-align: left;
+    margin-left: 1rem;
+  }
+  
+  .info p{
+    margin-top: 0;
+    text-align: left;
+  }
+}
+
+/* Reversed project */
+
 .reverse-project{
-  display: flex;
-  flex-direction: row-reverse;
+  display: block;
   margin-bottom: 10rem;
 }
 
@@ -218,27 +269,17 @@ header{
   margin-right: 1rem;
 }
 
-.info{
-  width:40%;
-  text-align: left;
-  margin-left: 1rem;
+@media(min-width: 768px){
+  .reverse-project{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 10rem;
+  }
+
 }
-
-.info p{
-  margin-top: 0;
-  text-align: left;
-}
-
-
-.gif{
-  border-radius: 2%;
-  max-width: 500px;
-}
-
 
 .contributions{
   line-height: 1;
-  
 }
 
 
