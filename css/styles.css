@@ -14,6 +14,7 @@ body{
     font-size: 62.5%;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 300;
+    line-height: 1.5;
   }
 
 
@@ -53,7 +54,7 @@ p{
 }
 
 p.year{
-  color:#9b9b9b;
+  color:#4b4b4b;
   font-weight: 400;
 }
 
@@ -61,9 +62,6 @@ img{
   width: 100%;
 }
 
-p.site-email{
-  
-}
 
 a{
   color: green;
@@ -99,6 +97,10 @@ a.ig:hover{
 
 a.itchio:hover{
   color: #fa5c5c;
+}
+
+li{
+  font-size: 1.5rem;
 }
 
 .container{
@@ -149,7 +151,7 @@ header{
 }
 
 .button{
-  border: 1px #bdbdbd solid;
+  border: 1px #397c37 solid;
   display: inline;
   padding: 0.5rem 1rem;
   border-radius: 10px;
@@ -195,7 +197,7 @@ header{
   .cool-underline{
     margin: 0;
    text-align:left;
-    width:10rem;
+    width:15rem;
     height: 0.25rem;
     background-color: green;
     border-radius: 5px;
@@ -211,8 +213,17 @@ header{
 }
 
 .project{
+  background-color: #dadada;
+  padding: 5rem;
   display: block;
   margin-bottom: 10rem;
+}
+
+.project div img{
+  display: block;
+  margin: 0 auto;
+  border-radius: 2%;
+  max-width: 500px;
 }
 
 .info{
@@ -243,7 +254,7 @@ header{
 @media(min-width: 768px){
   .project{
     display: flex;
-    margin-bottom: 10rem;
+    margin-bottom: 1rem;
   }
 
   .info{
@@ -261,27 +272,35 @@ header{
 /* Reversed project */
 
 .reverse-project{
+  background-color: #b9b8b8;
+  padding: 5rem;
   display: block;
-  margin-bottom: 10rem;
+  margin-bottom: 1rem;
 }
 
 .reverse-project .info{
   margin-right: 1rem;
 }
 
+.reverse-project div img{
+  display: block;
+  margin: 0 auto;
+  border-radius: 2%;
+  max-width: 500px;
+}
+
 @media(min-width: 768px){
   .reverse-project{
     display: flex;
     flex-direction: row-reverse;
-    margin-bottom: 10rem;
+    margin-bottom: 1rem;
   }
 
 }
 
 .contributions{
-  line-height: 1;
+  line-height: 1.5;
 }
-
 
 
 /** header **/
