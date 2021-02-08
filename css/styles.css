@@ -103,9 +103,15 @@ li{
   font-size: 1.5rem;
 }
 
-.container{
+.container{ 
   margin: 0 auto;
   max-width: 1200px;
+}
+
+@media (min-width: 768px){
+  div p{   
+    text-align: center;
+  }
 }
 
 .center{
@@ -208,6 +214,7 @@ header{
 
 .projects-header p{
   margin:0 auto;
+  padding: 0 1rem;
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -229,6 +236,11 @@ header{
 .info{
   text-align: center;
   margin-left: 1rem;
+}
+
+.info .contributions
+{
+  text-align: left;
 }
 
 .gif{
