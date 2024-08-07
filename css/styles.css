@@ -17,8 +17,6 @@ body{
     line-height: 1.5;
   }
 
-
-
 h1{
   font-size: 4rem;
   margin-bottom: 0;
@@ -190,6 +188,13 @@ header{
   margin-left: 0.8rem;
 }
 
+.tools-icons p img{
+  padding-top: .2rem;;
+  width: 5rem;
+  height: 5rem;
+  color: grey;
+}
+
 .cool-underline{
   margin:0 auto;
   text-align: center;
@@ -270,7 +275,7 @@ header{
   }
 
   .info{
-    width:40%;
+    width:50%;
     text-align: left;
     margin-left: 1rem;
   }
@@ -278,6 +283,7 @@ header{
   .info p{
     margin-top: 0;
     text-align: left;
+    text-align: justify;
   }
 }
 
